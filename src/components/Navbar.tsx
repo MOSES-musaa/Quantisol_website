@@ -62,10 +62,6 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href="tel:0712504467" className="flex items-center gap-2 text-primary-foreground/80 hover:text-gold transition-colors text-sm">
-            <Phone size={14} />
-            <span>0712 504 467</span>
-          </a>
           <Link
             to="/contact"
             className="bg-gold text-primary-foreground px-6 py-2.5 text-xs font-semibold tracking-widest uppercase hover:bg-accent/90 transition-colors"
@@ -76,10 +72,11 @@ const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button
+          type="button"
           onClick={() => setMobileOpen(!mobileOpen)}
           className="lg:hidden text-primary-foreground min-h-11 min-w-11 inline-flex items-center justify-center"
           aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
-          aria-expanded={mobileOpen}
+          aria-expanded={mobileOpen ? "true" : "false"}
           aria-controls="mobile-nav"
         >
           {mobileOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}

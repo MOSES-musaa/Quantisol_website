@@ -77,7 +77,7 @@ const PortfolioPage = () => {
               Our Project Portfolio
             </h1>
             <p className="text-primary-foreground/70 text-lg mt-6 max-w-2xl leading-relaxed">
-              Twenty-five projects across residential, commercial, institutional and public housing, together valued at over Ksh 30 billion. A quick tour of the work we've been trusted with.
+              Our Portfolio spans Twenty-five projects across residential, commercial, institutional and public housing, together valued at over Ksh 30 billion. A quick tour of the work we've been trusted with.
             </p>
           </ScrollReveal>
         </div>

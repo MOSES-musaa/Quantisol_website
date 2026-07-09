@@ -30,11 +30,11 @@ const directors = [
 
 const staff = [
   { name: "OBEDI W. NGACHA", role: "Administrator", qualification: "Bachelor of Commerce (Honors)" },
-  { name: "SAMMY W. CHONGE", role: "Assistant QS", qualification: "" },
-  { name: "JOSEPH M. GATHAMBI", role: "Assistant QS", qualification: "" },
-  { name: "MOSES K. KAGWE", role: "Senior QS", qualification: "" },
-  { name: "JENNIFER W. WENDO", role: "Assistant QS", qualification: "" },
-  { name: "BRIAN K. GICHERU", role: "Assistant QS", qualification: "" },
+  { name: "SAMMY W. CHONGE", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "JOSEPH M. GATHAMBI", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "MOSES K. KAGWE", role: "Senior QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "JENNIFER W. WENDO", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "BRIAN K. GICHERU", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
 ];
 
 const legacyMembers = [

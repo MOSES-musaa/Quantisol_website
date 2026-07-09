@@ -48,7 +48,8 @@ const AboutPage = () => {
               <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent mb-4 block">Company Overview</span>
               <div className="gold-line mb-6" />
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Quantsol Consultants Limited is a Nairobi-based consultancy working in quantity surveying, project management and facilities management. We're registered under the Companies Act and licensed under the Architects and Quantity Surveyors Act, Cap 525, and every one of our directors is registered with BORAQS.
+                Quantsol Consultants Limited is a Multidisciplinary consultancy specializing  in quantity surveying,
+                 project management and facilities management.Delivering practical, cost-effective solutions to construction challenges across the building environment.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 The firm is led by three directors, each with a Bachelor's Degree in Quantity Surveying and over a decade of practice on Kenyan and regional projects. That experience runs across residential and commercial developments, public housing, institutional work and fitouts. It's the kind of range that means we've usually seen your problem before.
