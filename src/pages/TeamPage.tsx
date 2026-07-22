@@ -3,6 +3,11 @@ import SEO from "@/components/SEO";
 import { ArrowRight } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeader from "@/components/SectionHeader";
+import wamalwaIMG from "@/assets/wamalwa.jpeg";
+import NgechuIMG from "@/assets/ngechu.jpg";
+import KaruguIMG from "@/assets/karugu.jpg";
+import WendoIMG from "@/assets/wendo.jpg";
+import JosephIMG from "@/assets/joseph.jpg";
 
 const directors = [
   {
@@ -18,6 +23,7 @@ const directors = [
     qualifications: "Bachelor of Quantity Surveying (Honors)",
     registration: "BORAQS Registered (Q840)",
     extra: "Diploma in Project Management",
+    image: KaruguIMG,
   },
   {
     name: "QS Humphrey Ngechu",
@@ -25,15 +31,16 @@ const directors = [
     qualifications: "Bachelor of Quantity Surveying (Honors)",
     registration: "BORAQS Registered (Q865)",
     extra: "CPA (K), PRINCE2 Foundation",
+    image: NgechuIMG,
   },
 ];
 
 const staff = [
   { name: "OBEDI W. NGACHA", role: "Administrator", qualification: "Bachelor of Commerce (Honors)" },
-  { name: "SAMMY W. CHONGE", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
-  { name: "JOSEPH M. GATHAMBI", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "SAMMY W. CHONGE", image: wamalwaIMG, role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "JOSEPH M. GATHAMBI", image: JosephIMG, role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
   { name: "MOSES K. KAGWE", role: "Senior QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
-  { name: "JENNIFER W. WENDO", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "JENNIFER W. WENDO", image: WendoIMG, role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
   { name: "BRIAN K. GICHERU", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
 ];
 
@@ -78,11 +85,23 @@ const TeamPage = () => {
             {directors.map((d, i) => (
               <ScrollReveal key={i} delay={i * 0.15}>
                 <div className="bg-card card-hover p-8 text-center">
-                  <div className="w-24 h-24 bg-surface rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-accent">
-                      {d.name.split(" ").slice(1).map(n => n[0]).join("")}
-                    </span>
-                  </div>
+                  <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden bg-surface flex items-center justify-center">
+  {d.image ? (
+    <img
+      src={d.image}
+      alt={d.name}
+      className="w-full h-full object-cover"
+    />
+  ) : (
+    <span className="text-2xl font-bold text-accent">
+      {d.name
+        .split(" ")
+        .map(n => n[0])
+        .join("")
+        .slice(0, 2)}
+    </span>
+  )}
+</div>
                   <h3 className="text-lg font-semibold tracking-tight mb-1">{d.name}</h3>
                   <span className="text-xs font-semibold tracking-widest uppercase text-accent">{d.position}</span>
                   <div className="mt-4 pt-4 border-t border-border">
@@ -105,10 +124,22 @@ const TeamPage = () => {
             {staff.map((s, i) => (
               <ScrollReveal key={i} delay={(i % 4) * 0.1}>
                 <div className="bg-card p-6 text-center card-hover">
-                  <div className="w-16 h-16 bg-surface rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-base font-bold text-accent">
-                      {s.name.split(" ").map(n => n[0]).join("").slice(0,2)}
-                    </span>
+                  <div className="w-16 h-16 rounded-full mx-auto mb-4 overflow-hidden bg-surface flex items-center justify-center">
+                    {s.image ? (
+                      <img
+                        src={s.image}
+                        alt={s.name}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <span className="text-xl font-bold text-accent">
+                        {s.name
+                          .split(" ")
+                          .map(n => n[0])
+                          .join("")
+                          .slice(0, 2)}
+                      </span>
+                    )}
                   </div>
                   <h4 className="text-sm font-semibold mb-1">{s.name}</h4>
                   <span className="text-xs text-accent">{s.role}</span>
