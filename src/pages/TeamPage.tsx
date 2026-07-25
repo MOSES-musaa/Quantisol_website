@@ -8,6 +8,10 @@ import NgechuIMG from "@/assets/ngechu.jpg";
 import KaruguIMG from "@/assets/karugu.jpg";
 import WendoIMG from "@/assets/wendo.jpg";
 import JosephIMG from "@/assets/joseph.jpg";
+import MichaelIMG from "@/assets/michael.jpeg";
+import ObediIMG from "@/assets/obedi.jpg";
+
+
 
 const directors = [
   {
@@ -16,6 +20,7 @@ const directors = [
     qualifications: "Bachelor of Quantity Surveying (Honors)",
     registration: "BORAQS Registered (Q860)",
     extra: "Certificate in Basic Engineering Draughting",
+    image: MichaelIMG,
   },
   {
     name: "QS Huria Karugu",
@@ -36,12 +41,12 @@ const directors = [
 ];
 
 const staff = [
-  { name: "OBEDI W. NGACHA", role: "Administrator", qualification: "Bachelor of Commerce (Honors)" },
+  { name: "OBEDI W. NGACHA", role: "Administrator", qualification: "Bachelor of Commerce (Honors)", image: ObediIMG },
   { name: "SAMMY W. CHONGE", image: wamalwaIMG, role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
   { name: "JOSEPH M. GATHAMBI", image: JosephIMG, role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
   { name: "MOSES K. KAGWE", role: "Senior QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
   { name: "JENNIFER W. WENDO", image: WendoIMG, role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
-  { name: "BRIAN K. GICHERU", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "BRIAN K. KARIUKI", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
 ];
 
 const legacyMembers = [

@@ -18,6 +18,7 @@ import projectTilisi from "@/assets/project-tilisi.jpg";
 import bgBoqReview from "@/assets/bg-boq-review.jpg";
 import bgDigitalEstimation from "@/assets/bg-digital-estimation.jpg";
 import bgSiteSupervision from "@/assets/bg-site-supervision.jpg";
+import quantsolPDF from "@/assets/quantsol-profile.pdf";
 
 const services = [
   {
@@ -241,9 +242,8 @@ const HomePage = () => {
                 Learn More About Us <ArrowRight size={14} />
               </Link>
               <a
-                href="/quantsol-profile.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={quantsolPDF}
+                download="quantsol-profile.pdf"
                 className="inline-flex items-center justify-center gap-2 text-muted-foreground text-sm font-medium hover:text-accent transition-colors"
               >
                 <Download size={14} />
