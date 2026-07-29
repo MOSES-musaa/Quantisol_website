@@ -29,7 +29,7 @@ import wendo from "@/assets/wendo.jpg";
 import joseph from "@/assets/joseph.jpg";
 import michael from "@/assets/michael.jpeg";
 import obedi from "@/assets/obedi.jpg";
-import brian from "@/assets/brian.jpeg";
+import brian from "@/assets/BRIAN.jpeg";
 import moses from "@/assets/moses.jpg";
 
 // Hero & Background images
