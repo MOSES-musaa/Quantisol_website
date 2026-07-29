@@ -3,22 +3,7 @@ import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import ScrollReveal from "@/components/ScrollReveal";
 import { ArrowLeft, ArrowRight, Calendar, Clock, User } from "lucide-react";
-import bgBoqReview from "@/assets/bg-boq-review.jpg";
-import bgDigitalEstimation from "@/assets/bg-digital-estimation.jpg";
-import bgSiteSupervision from "@/assets/bg-site-supervision.jpg";
-import heroImg from "@/assets/hero-building.jpg";
-import projectHousing from "@/assets/project-housing.jpg";
-import projectRiverside from "@/assets/project-riverside.jpg";
-import projectOffice from "@/assets/project-office.jpg";
-import projectMayfairFitout from "@/assets/project-mayfair-fitout.jpg";
-import projectSchoolLane from "@/assets/project-school-lane.jpg";
-import projectAeroclub from "@/assets/project-aeroclub.jpg";
-import projectLoreto from "@/assets/project-loreto.jpg";
-import projectBankFitout from "@/assets/project-bank-fitout.jpg";
-
-import projectHacienda from "@/assets/project-hacienda.jpg";
-import projectMoran from "@/assets/project-moran.jpg";
-import aboutTeam from "@/assets/about-team.jpg";
+import images from "@/lib/images";
 
 interface Section {
   heading?: string;
@@ -44,7 +29,7 @@ const articles: Article[] = [
     title: "Why Kenyan Construction Projects Overrun, and How to Stop It Happening to Yours",
     excerpt: "Most cost overruns aren't caused by one dramatic event. They build up quietly, and the fixes are less complicated than people think.",
     metaDescription: "Practical guide to preventing cost overruns on Kenyan construction projects, from feasibility and cost planning to variations and monthly reporting.",
-    image: bgBoqReview,
+    image: images.bgBoqReview,
     category: "Cost Management",
     author: "Quantsol Editorial",
     date: "March 4, 2026",
@@ -93,7 +78,7 @@ const articles: Article[] = [
     title: "How to Read a Bill of Quantities Without Getting Lost",
     excerpt: "A plain guide for developers and first-time clients on what a BoQ actually contains and how to use it to keep control of your project.",
     metaDescription: "Learn how to read a Bill of Quantities in Kenya, including preliminaries, provisional sums, PC sums, and the monthly reports every developer should demand.",
-    image: bgDigitalEstimation,
+    image: images.bgDigitalEstimation,
     category: "Client Guides",
     author: "Quantsol Editorial",
     date: "February 18, 2026",
@@ -141,7 +126,7 @@ const articles: Article[] = [
     title: "Kenya's Affordable Housing Programme: What It Means for Developers",
     excerpt: "The Housing Levy, the Affordable Housing Act, and where private developers actually fit into the pipeline.",
     metaDescription: "An overview of Kenya's Affordable Housing Programme, its compliance requirements, and how developers can participate through PPPs and private social housing.",
-    image: projectHousing,
+    image: images.projectHousing,
     category: "Policy & Markets",
     author: "Quantsol Editorial",
     date: "January 27, 2026",
@@ -188,7 +173,7 @@ const articles: Article[] = [
     title: "What Good Site Supervision Actually Looks Like",
     excerpt: "Beyond the site meeting minutes, the daily habits that separate well-run Kenyan sites from the ones that quietly drift.",
     metaDescription: "Practical guide to effective site supervision in Kenya, covering look-ahead programmes, joint measurement, and the paper trail that prevents disputes.",
-    image: bgSiteSupervision,
+    image: images.bgSiteSupervision,
     category: "Project Management",
     author: "Quantsol Editorial",
     date: "January 9, 2026",
@@ -233,7 +218,7 @@ const articles: Article[] = [
     title: "Managing Material Price Volatility in a Shifting Market",
     excerpt: "Steel, cement and imported finishes have moved sharply in the last 24 months. Here's how to protect margins without stalling the project.",
     metaDescription: "How Kenyan developers and contractors can manage volatility in steel, cement and imported material prices using fluctuation clauses, early procurement and contingency.",
-    image: heroImg,
+    image: images.heroImg,
     category: "Cost Management",
     author: "Quantsol Editorial",
     date: "December 12, 2025",
@@ -278,7 +263,7 @@ const articles: Article[] = [
     title: "JBC or FIDIC? Choosing the Right Contract for Your Kenyan Project",
     excerpt: "The two contract families that cover almost every serious project in Kenya, and how to pick the one that fits yours.",
     metaDescription: "A practical comparison of JBC and FIDIC contracts for Kenyan construction projects, covering payment, disputes, and when each is the right choice.",
-    image: bgBoqReview,
+    image: images.bgBoqReview,
     category: "Contracts",
     author: "Quantsol Editorial",
     date: "November 30, 2025",
@@ -325,7 +310,7 @@ const articles: Article[] = [
     title: "What a Quantity Surveyor Actually Does (For People Who've Never Hired One)",
     excerpt: "If you've never worked with a QS before, the job title doesn't help much. Here's what one actually does on your project.",
     metaDescription: "A plain-English explanation of what a quantity surveyor does in Kenya, from pre-contract cost planning to final account and dispute resolution.",
-    image: bgDigitalEstimation,
+    image: images.bgDigitalEstimation,
     category: "Client Guides",
     author: "Quantsol Editorial",
     date: "November 12, 2025",
@@ -365,7 +350,7 @@ const articles: Article[] = [
     title: "The Real Cost of Building a Home in Nairobi Today",
     excerpt: "What a modest bungalow, a family home, and a high-end villa actually cost to build in and around Nairobi right now.",
     metaDescription: "Current benchmark costs for building a home in Nairobi, from bungalows to high-end villas, plus the hidden costs most first-time developers miss.",
-    image: projectRiverside,
+    image: images.projectRiverside,
     category: "Client Guides",
     author: "Quantsol Editorial",
     date: "October 22, 2025",
@@ -412,7 +397,7 @@ const articles: Article[] = [
     title: "Feasibility Studies: The Step Most Developers Skip and Regret",
     excerpt: "The cheapest work you'll ever do on a project is deciding not to build the wrong version of it.",
     metaDescription: "Why feasibility studies matter for Kenyan property developments, and what a good one should cover before design commits any real money.",
-    image: projectOffice,
+    image: images.projectOffice,
     category: "Development",
     author: "Quantsol Editorial",
     date: "October 5, 2025",
@@ -453,7 +438,7 @@ const articles: Article[] = [
     title: "Understanding Preliminaries: Where 10% of Your Budget Really Goes",
     excerpt: "Preliminaries look boring on a BoQ. They're where the contractor absorbs risk, which makes them one of the most important sections in the document.",
     metaDescription: "A clear explanation of construction preliminaries in Kenya, what they cover, and why they matter for cost control on any project.",
-    image: bgSiteSupervision,
+    image: images.bgSiteSupervision,
     category: "Cost Management",
     author: "Quantsol Editorial",
     date: "September 18, 2025",
@@ -492,7 +477,7 @@ const articles: Article[] = [
     title: "Provisional Sums and Prime Cost Sums, Demystified",
     excerpt: "These two little phrases in your BoQ are quietly responsible for a large share of every cost overrun on record.",
     metaDescription: "Understand provisional sums and prime cost sums in Kenyan BoQs, and how to control them so they don't turn into cost overruns.",
-    image: bgBoqReview,
+    image: images.bgBoqReview,
     category: "Cost Management",
     author: "Quantsol Editorial",
     date: "September 3, 2025",
@@ -538,7 +523,7 @@ const articles: Article[] = [
     title: "How to Choose the Right Contractor in Kenya",
     excerpt: "The lowest tender isn't the cheapest project. Here's what to actually look at when you're picking a builder.",
     metaDescription: "How to evaluate and select a construction contractor in Kenya, including NCA registration, references, financial capacity, and tender interrogation.",
-    image: projectMoran,
+    image: images.projectMoran,
     category: "Procurement",
     author: "Quantsol Editorial",
     date: "August 20, 2025",
@@ -590,7 +575,7 @@ const articles: Article[] = [
     title: "Value Engineering Without Cutting Corners",
     excerpt: "Done well, value engineering saves money without visibly cheapening the building. Done badly, it's just cost-cutting with a nicer name.",
     metaDescription: "How to apply value engineering to Kenyan construction projects to reduce cost without compromising quality or long-term performance.",
-    image: projectSchoolLane,
+    image: images.projectSchoolLane,
     category: "Cost Management",
     author: "Quantsol Editorial",
     date: "August 5, 2025",
@@ -629,7 +614,7 @@ const articles: Article[] = [
     title: "Retention, Defects Liability, and the Final Account",
     excerpt: "What actually happens after practical completion, and why the last five per cent of the money causes so much of the friction.",
     metaDescription: "Understand how retention money, the defects liability period, and the final account work on Kenyan construction contracts.",
-    image: projectHacienda,
+    image: images.projectHacienda,
     category: "Contracts",
     author: "Quantsol Editorial",
     date: "July 22, 2025",
@@ -668,7 +653,7 @@ const articles: Article[] = [
     title: "Public-Private Partnerships in Kenyan Housing: What Actually Works",
     excerpt: "PPPs are the delivery model behind most large affordable housing schemes in Kenya. Here's how the mechanics actually work.",
     metaDescription: "How Public-Private Partnerships work for housing delivery in Kenya, including concession structures, offtake and cost verification.",
-    image: projectHousing,
+    image: images.projectHousing,
     category: "Policy & Markets",
     author: "Quantsol Editorial",
     date: "July 8, 2025",
@@ -714,7 +699,7 @@ const articles: Article[] = [
     title: "Sustainable Construction in Kenya: What It Costs and What It Saves",
     excerpt: "Green building doesn't have to mean expensive imports and glossy certifications. Here's what actually pays back in the Kenyan climate.",
     metaDescription: "Practical sustainable construction strategies for Kenya, including passive design, water reuse, solar, and their real cost and payback.",
-    image: projectAeroclub,
+    image: images.projectAeroclub,
     category: "Sustainability",
     author: "Quantsol Editorial",
     date: "June 24, 2025",
@@ -760,7 +745,7 @@ const articles: Article[] = [
     title: "Interim Payment Certificates: What Every Developer Should Understand",
     excerpt: "The monthly certificate is the single most important routine document on a construction project. Here's how to read one properly.",
     metaDescription: "How interim payment certificates work on Kenyan construction contracts, what they include, and how developers should review them each month.",
-    image: bgDigitalEstimation,
+    image: images.bgDigitalEstimation,
     category: "Contracts",
     author: "Quantsol Editorial",
     date: "June 10, 2025",
@@ -800,7 +785,7 @@ const articles: Article[] = [
     title: "Managing Design Changes Without Blowing the Budget",
     excerpt: "Every project has changes. The successful ones price them before they happen. The struggling ones price them at final account.",
     metaDescription: "How to manage design changes and variations on Kenyan construction projects without losing cost control or programme.",
-    image: projectMayfairFitout,
+    image: images.projectMayfairFitout,
     category: "Project Management",
     author: "Quantsol Editorial",
     date: "May 28, 2025",
@@ -839,7 +824,7 @@ const articles: Article[] = [
     title: "The NCA and What Contractor Registration Actually Guarantees",
     excerpt: "National Construction Authority registration is a starting point, not a warranty. Here's what the categories mean and what to check beyond them.",
     metaDescription: "What NCA registration means for Kenyan contractors, what the categories cover, and what developers should verify beyond the registration itself.",
-    image: projectHacienda,
+    image: images.projectHacienda,
     category: "Procurement",
     author: "Quantsol Editorial",
     date: "May 14, 2025",
@@ -878,7 +863,7 @@ const articles: Article[] = [
     title: "Facilities Management: The Chapter That Starts After Handover",
     excerpt: "The building's cost curve doesn't end at practical completion. Over its life, operating and maintaining it costs more than building it.",
     metaDescription: "Why facilities management matters for property owners in Kenya, and how planned maintenance and asset management protect long-term value.",
-    image: projectBankFitout,
+    image: images.projectBankFitout,
     category: "Facilities Management",
     author: "Quantsol Editorial",
     date: "April 30, 2025",

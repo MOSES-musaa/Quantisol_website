@@ -3,13 +3,7 @@ import SEO from "@/components/SEO";
 import { ArrowRight } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeader from "@/components/SectionHeader";
-import wamalwaIMG from "@/assets/wamalwa.jpeg";
-import NgechuIMG from "@/assets/ngechu.jpg";
-import KaruguIMG from "@/assets/karugu.jpg";
-import WendoIMG from "@/assets/wendo.jpg";
-import JosephIMG from "@/assets/joseph.jpg";
-import MichaelIMG from "@/assets/michael.jpeg";
-import ObediIMG from "@/assets/obedi.jpg";
+import images from "@/lib/images";
 
 
 
@@ -20,7 +14,7 @@ const directors = [
     qualifications: "Bachelor of Quantity Surveying (Honors)",
     registration: "BORAQS Registered (Q860)",
     extra: "Certificate in Basic Engineering Draughting",
-    image: MichaelIMG,
+    image: images.michael,
   },
   {
     name: "QS Huria Karugu",
@@ -28,7 +22,7 @@ const directors = [
     qualifications: "Bachelor of Quantity Surveying (Honors)",
     registration: "BORAQS Registered (Q840)",
     extra: "Diploma in Project Management",
-    image: KaruguIMG,
+    image: images.karugu,
   },
   {
     name: "QS Humphrey Ngechu",
@@ -36,17 +30,17 @@ const directors = [
     qualifications: "Bachelor of Quantity Surveying (Honors)",
     registration: "BORAQS Registered (Q865)",
     extra: "CPA (K), PRINCE2 Foundation",
-    image: NgechuIMG,
+    image: images.ngechu,
   },
 ];
 
 const staff = [
-  { name: "OBEDI W. NGACHA", role: "Administrator", qualification: "Bachelor of Commerce (Honors)", image: ObediIMG },
-  { name: "SAMMY W. CHONGE", image: wamalwaIMG, role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
-  { name: "JOSEPH M. GATHAMBI", image: JosephIMG, role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
-  { name: "MOSES K. KAGWE", role: "Senior QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
-  { name: "JENNIFER W. WENDO", image: WendoIMG, role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
-  { name: "BRIAN K. KARIUKI", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "OBEDI W. NGACHA", role: "Administrator", qualification: "Bachelor of Commerce (Honors)", image: images.obedi },
+  { name: "SAMMY W. CHONGE", image: images.wamalwa, role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "JOSEPH M. GATHAMBI", image: images.joseph, role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "MOSES K. KAGWE", image: images.moses, role: "Senior QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "JENIFFER W. WENDO", image: images.wendo, role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "BRIAN K. KARUKI", image: images.brian, role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
 ];
 
 const legacyMembers = [

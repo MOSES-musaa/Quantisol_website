@@ -4,28 +4,7 @@ import { ArrowRight } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeader from "@/components/SectionHeader";
 import SiteGallery from "@/components/SiteGallery";
-import projectHousing from "@/assets/project-housing.jpg";
-import projectRiverside from "@/assets/project-riverside.jpg";
-import projectTilisi from "@/assets/project-tilisi.jpg";
-import projectOffice from "@/assets/project-office.jpg";
-import projectMayfairFitout from "@/assets/project-mayfair-fitout.jpg";
-import projectSchoolLane from "@/assets/project-school-lane.jpg";
-import projectAeroclub from "@/assets/project-aeroclub.jpg";
-import projectLoreto from "@/assets/project-loreto.jpg";
-import projectBankFitout from "@/assets/project-bank-fitout.jpg";
-import projectHacienda from "@/assets/project-hacienda.jpg";
-import projectMoran from "@/assets/project-moran.jpg";
-
-// Tilisi / Maisha Development photos
-import tilisi1 from "@/assets/tilisi-1.jpg";
-import tilisi2 from "@/assets/tilisi-2.jpg";
-import tilisi3 from "@/assets/tilisi-3.jpg";
-import tilisi4 from "@/assets/tilisi-4.jpg";
-import tilisi5 from "@/assets/tilisi-5.jpg";
-import tilisi6 from "@/assets/tilisi-6.jpg";
-import tilisi7 from "@/assets/tilisi-7.jpg";
-import tilisi8 from "@/assets/tilisi-8.jpg";
-import tilisi9 from "@/assets/tilisi-9.jpg";
+import images from "@/lib/images";
 
 interface Project {
   name: string;
@@ -37,19 +16,19 @@ interface Project {
 }
 
 const projects: Project[] = [
-  { name: "Maisha Development — Tilisi", client: "Nirma Holdings Ltd", status: "Ongoing", image: tilisi4, isTilisi: true },
-  { name: "Spring Valley Residential Development", client: "Rushmore Investment Ltd", status: "Ongoing", image: projectRiverside },
-  { name: "Kyuna 39", client: "Mucyo & Hope", status: "Design", image: projectHousing },
-  { name: "Kigali Office Block Development", client: "Mayfair Rwanda Ltd", status: "Award", image: projectOffice },
-  { name: "Office Fitout Mayfair Centre", client: "Mayfair Kenya Ltd", status: "Ongoing", image: projectMayfairFitout },
-  { name: "School Lane Apartments", client: "Panorama Ltd", status: "Design", image: projectSchoolLane },
+  { name: "Maisha Development — Tilisi", client: "Nirma Holdings Ltd", status: "Ongoing", image: images.tilisi4, isTilisi: true },
+  { name: "Spring Valley Residential Development", client: "Rushmore Investment Ltd", status: "Ongoing", image: images.projectRiverside },
+  { name: "Kyuna 39", client: "Mucyo & Hope", status: "Design", image: images.projectHousing },
+  { name: "Kigali Office Block Development", client: "Mayfair Rwanda Ltd", status: "Award", image: images.projectOffice },
+  { name: "Office Fitout Mayfair Centre", client: "Mayfair Kenya Ltd", status: "Ongoing", image: images.projectMayfairFitout },
+  { name: "School Lane Apartments", client: "Panorama Ltd", status: "Design", image: images.projectSchoolLane },
   { name: "KDF Accommodation Housing — PPP & Affordable", client: "CREC 10", status: "Ongoing", image: "/placeholder.svg", isRestricted: true },
-  { name: "Aeroclub Kitchen", client: "Aeroclub EA", status: "Design", image: projectAeroclub },
-  { name: "Kitchen & Ablution Block", client: "Loreto Convent", status: "Ongoing", image: projectLoreto },
-  { name: "Various Bank Fitouts (BoQ)", client: "Prime Bank", status: "Ongoing", image: projectBankFitout },
+  { name: "Aeroclub Kitchen", client: "Aeroclub EA", status: "Design", image: images.projectAeroclub },
+  { name: "Kitchen & Ablution Block", client: "Loreto Convent", status: "Ongoing", image: images.projectLoreto },
+  { name: "Various Bank Fitouts (BoQ)", client: "Prime Bank", status: "Ongoing", image: images.projectBankFitout },
   { name: "New Rehema House Fitout", client: "NFDK", status: "Ongoing", image: "/placeholder.svg", isRestricted: true },
-  { name: "Hacienda Michael", client: "Njau Ngacha Family", status: "Ongoing", image: projectHacienda },
-  { name: "Moran Hotel", client: "Centcrete Ltd", status: "Award", image: projectMoran },
+  { name: "Hacienda Michael", client: "Njau Ngacha Family", status: "Ongoing", image: images.projectHacienda },
+  { name: "Moran Hotel", client: "Centcrete Ltd", status: "Award", image: images.projectMoran },
   { name: "Masalani Works", client: "DMS", status: "Ongoing", image: "/placeholder.svg", isRestricted: true },
 ];
 
@@ -77,7 +56,8 @@ const PortfolioPage = () => {
               Our Project Portfolio
             </h1>
             <p className="text-primary-foreground/70 text-lg mt-6 max-w-2xl leading-relaxed">
-              Our Portfolio spans Twenty-five projects across residential, commercial, institutional and public housing, together valued at over Ksh 30 billion. A quick tour of the work we've been trusted with.
+              The Portfolio presented highlights a selection of the sites and assignments currently being handled by our team. It
+              provides an overview of our ongoing involvements across various sectors and showcasing  our commitment to delivering professional consultancy services.
             </p>
           </ScrollReveal>
         </div>
@@ -126,7 +106,7 @@ const PortfolioPage = () => {
                   {p.isTilisi && (
                     <div className="px-6 pb-6 space-y-6">
                       <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gold">Site Progress</p>
-                      <SiteGallery siteName="Tilisi" images={[tilisi1, tilisi2, tilisi3, tilisi4, tilisi5, tilisi6, tilisi7, tilisi8, tilisi9]} />
+                      <SiteGallery siteName="Tilisi" images={images.tilisi} />
                     </div>
                   )}
                 </div>

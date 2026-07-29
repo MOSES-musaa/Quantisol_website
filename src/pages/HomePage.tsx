@@ -10,14 +10,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeader from "@/components/SectionHeader";
 import CountUp from "@/components/CountUp";
 import HeroSlideshow from "@/components/HeroSlideshow";
-import heroImg from "@/assets/hero-building.jpg";
-import projectHousing from "@/assets/project-housing.jpg";
-import projectRiverside from "@/assets/project-riverside.jpg";
-
-import projectTilisi from "@/assets/project-tilisi.jpg";
-import bgBoqReview from "@/assets/bg-boq-review.jpg";
-import bgDigitalEstimation from "@/assets/bg-digital-estimation.jpg";
-import bgSiteSupervision from "@/assets/bg-site-supervision.jpg";
+import images from "@/lib/images";
 import quantsolPDF from "@/assets/quantsol-profile.pdf";
 
 const services = [
@@ -79,9 +72,9 @@ const whyUs = [
 
 const projects = [
   { name: "KDF Housing Project — PPP & Affordable", status: "Ongoing", image: "/placeholder.svg", restricted: true },
-  { name: "Maisha Development", status: "Ongoing", image: projectTilisi },
-  { name: "Spring Valley Residential", status: "Ongoing", image: projectRiverside },
-  { name: "Kigali Office Block", status: "Award Stage", image: projectHousing },
+  { name: "Maisha Development", status: "Ongoing", image: images.projectTilisi },
+  { name: "Spring Valley Residential", status: "Ongoing", image: images.projectRiverside },
+  { name: "Kigali Office Block", status: "Award Stage", image: images.projectHousing },
 ];
 
 const stats = [
@@ -125,10 +118,10 @@ const HomePage = () => {
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <HeroSlideshow
           images={[
-            { src: heroImg, alt: "Modern building in Kenya" },
-            { src: bgBoqReview, alt: "Office planning and BoQ review" },
-            { src: bgDigitalEstimation, alt: "Digital cost estimation" },
-            { src: bgSiteSupervision, alt: "Site supervision and measurement" },
+            { src: images.heroImg, alt: "Modern building in Kenya" },
+            { src: images.bgBoqReview, alt: "Office planning and BoQ review" },
+            { src: images.bgDigitalEstimation, alt: "Digital cost estimation" },
+            { src: images.bgSiteSupervision, alt: "Site supervision and measurement" },
           ]}
           interval={6000}
         />
@@ -221,7 +214,7 @@ const HomePage = () => {
       {/* About Intro */}
       <section className="section-padding relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={bgBoqReview} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+          <img src={images.bgBoqReview} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
           <div className="absolute inset-0 bg-background/90" />
         </div>
         <div className="section-container max-w-4xl text-center relative z-10">
@@ -257,7 +250,7 @@ const HomePage = () => {
       {/* Services */}
       <section className="section-padding relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={bgDigitalEstimation} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+          <img src={images.bgDigitalEstimation} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
           <div className="absolute inset-0 bg-surface/90" />
         </div>
         <div className="section-container relative z-10">
@@ -295,7 +288,7 @@ const HomePage = () => {
       {/* Why Choose Us */}
       <section className="section-padding relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={bgSiteSupervision} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+          <img src={images.bgSiteSupervision} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
           <div className="absolute inset-0 bg-background/90" />
         </div>
         <div className="section-container relative z-10">
