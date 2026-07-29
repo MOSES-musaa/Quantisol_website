@@ -30,7 +30,7 @@ import joseph from "@/assets/joseph.jpg";
 import michael from "@/assets/michael.jpeg";
 import obedi from "@/assets/obedi.jpg";
 import brian from "@/assets/BRIAN.jpeg";
-import moses from "@/assets/moses.jpg";
+import moses from "@/assets/MOSES.jpg";
 
 // Hero & Background images
 import heroImg from "@/assets/hero-building.jpg";
