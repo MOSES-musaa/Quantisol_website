@@ -30,6 +30,16 @@ const projects: Project[] = [
   { name: "Hacienda Michael", client: "Njau Ngacha Family", status: "Ongoing", image: images.projectHacienda },
   { name: "Moran Hotel", client: "Centcrete Ltd", status: "Award", image: images.projectMoran },
   { name: "Masalani Works", client: "DMS", status: "Ongoing", image: "/placeholder.svg", isRestricted: true },
+  {name: "Baobab Resort Renovation", client:"Confidential", status:"Ongoing", image: "/placeholder.svg", isRestricted: true},
+  {name: "Engineer James School, Riruta", client:"Confidential", status:"Award", image: "/placeholder.svg", isRestricted: true},
+  {name: "Nacha Sekenani Tented Resort", client:"Confidential", status:"Award", image: "/placeholder.svg", isRestricted: true},
+  {name: "DIB office fitout", client:"Confidential", status:"Ongoing", image: "/placeholder.svg", isRestricted: true},
+  {name: "Olari Legacy", client:"Confidential", status:"Award", image: "/placeholder.svg", isRestricted: true},
+  {name: "UOEMU Science lab", client:"Confidential", status:"Ongoing", image: "/placeholder.svg", isRestricted: true},
+  {name: "Aveeva Residential Development", client:"Confidential", status:"Award", image: "/placeholder.svg", isRestricted: true},
+  {name: "Mwanzi Restaurant and Bar Fitout", client:"Confidential", status:"Award", image: "/placeholder.svg", isRestricted: true},
+  {name : "Roysambu School", client:"Confidential", status:"Award", image: "/placeholder.svg", isRestricted: true}
+
 ];
 
 const clients = [

@@ -22,7 +22,7 @@ import tilisi8 from "@/assets/tilisi-8.jpg";
 import tilisi9 from "@/assets/tilisi-9.jpg";
 
 // Team / staff photos
-import wamalwa from "@/assets/wamalwa.jpeg";
+import wamalwa from "@/assets/SAMMY.jpeg";
 import ngechu from "@/assets/ngechu.jpg";
 import karugu from "@/assets/karugu.jpg";
 import wendo from "@/assets/wendo.jpg";
