@@ -9,19 +9,69 @@ const ContactPage = () => {
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
   const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
-      toast.error("Please fill in all required fields.");
-      return;
-    }
-    setSending(true);
-    setTimeout(() => {
-      setSending(false);
-      toast.success("Thank you! Your message has been sent. We'll get back to you shortly.");
-      setFormData({ name: "", email: "", phone: "", message: "" });
-    }, 1500);
-  };
+  const handleSubmit = async (e: FormEvent) => {
+  e.preventDefault();
+
+  if (
+    !formData.name.trim() ||
+    !formData.email.trim() ||
+    !formData.message.trim()
+  ) {
+    toast.error("Please fill in all required fields.");
+    return;
+  }
+
+  setSending(true);
+
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const contentType = response.headers.get("content-type");
+
+if (!contentType?.includes("application/json")) {
+  const text = await response.text();
+
+  console.error("Non-JSON response:", {
+    status: response.status,
+    response: text,
+  });
+
+  throw new Error(
+    `Server returned an unexpected response (${response.status}).`
+  );
+}
+
+const data = await response.json();
+
+if (!response.ok) {
+  throw new Error(data.message || "Failed to send message.");
+}
+    toast.success("Your message has been sent successfully.");
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+  } catch (error) {
+    console.error("Contact form submission error:", error);
+
+    toast.error(
+      error instanceof Error
+        ? error.message
+        : "Unable to send your message. Please try again."
+    );
+  } finally {
+    setSending(false);
+  }
+};
 
   return (
     <main>
